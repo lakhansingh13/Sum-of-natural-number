@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std ;
+
+
+ int sum( int n){
+     if (n==0)
+     return 0;
+     return n + sum(n-1);
+    }
+int main(){
+    int n ,s ;
+    cout<<"Enter the value of n :";
+    cin>>n;
+    s = sum(n);
+    
+    cout<<"The sum of first "<<n<<" natural number is :"<<s;
+    return 0;
+}
